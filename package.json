@@ -1,12 +1,19 @@
 {
   "name": "all-the-patterns",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A little collection of common javascript patterns for handling data.",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "jest": "^17.0.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -17,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/SamPedley/All-The-Patterns/issues"
   },
-  "homepage": "https://github.com/SamPedley/All-The-Patterns#readme"
+  "homepage": "https://github.com/SamPedley/All-The-Patterns#readme",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
 }
